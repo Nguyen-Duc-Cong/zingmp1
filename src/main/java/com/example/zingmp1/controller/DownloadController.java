@@ -32,7 +32,7 @@ public class DownloadController {
 			}
 			response.setContentType(mimeType);
 			int id = Integer.valueOf(removeExtension(file.getName()));
-			Audio audio = userService.findAudioById(id);9
+			Audio audio = userService.findAudioById(id);
 			String name = audio.getName();
 			String extension = file.getName().substring(file.getName().lastIndexOf(".") + 1);
 			String realName = name + "." + extension;
