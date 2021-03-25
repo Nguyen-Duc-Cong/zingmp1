@@ -40,7 +40,7 @@ public class DisplayController {
 			countString = "There are no audio files available!";
 		}
 		model.addObject("allAudioFilesCountString", countString);
-		model.setViewName("");
+		model.setViewName("display/display_all");
 		return model;
     }
 
